@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>متجر أورا</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      color: #333;
+    }
+    header {
+      background: #fff;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      color: #444;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #eee;
+      padding: 10px 0;
+      gap: 25px;
+    }
+    nav a {
+      color: #333;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 16px;
+      padding: 8px 15px;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+    nav a:hover {
+      background: #ddd;
+    }
+    .products {
+      max-width: 1200px;
+      margin: 30px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill,minmax(220px,1fr));
+      gap: 20px;
+      padding: 0 15px;
+    }
+    .product {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      padding-bottom: 15px;
+    }
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .product h3 {
+      margin: 10px 0 5px;
+      font-size: 18px;
+      color: #222;
+    }
+    .product p {
+      margin: 0;
+      color: #555;
+      font-size: 16px;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      background: #333;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 14px;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #555;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #eee;
+      color: #666;
+      margin-top: 40px;
+    }
+    @media(max-width:600px) {
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+      header h1 {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>متجر أورا</h1>
+</header>
+
+<nav>
+  <a href="#">الرئيسية</a>
+  <a href="#products">المنتجات</a>
+  <a href="#contact">تواصل</a>
+</nav>
+
+<section id="products" class="products">
+  <div class="product">
+    <img src="https://via.placeholder.com/300x200?text=منتج+1" alt="منتج 1" />
+    <h3>منتج 1</h3>
+    <p>120 ريال</p>
+    <a href="#" class="btn">أضف للسلة</a>
+  </div>
+  <div class="product">
+    <img src="https://via.placeholder.com/300x200?text=منتج+2" alt="منتج 2" />
+    <h3>منتج 2</h3>
+    <p>95 ريال</p>
+    <a href="#" class="btn">أضف للسلة</a>
+  </div>
+  <div class="product">
+    <img src="https://via.placeholder.com/300x200?text=منتج+3" alt="منتج 3" />
+    <h3>منتج 3</h3>
+    <p>150 ريال</p>
+    <a href="#" class="btn">أضف للسلة</a>
+  </div>
+  <div class="product">
+    <img src="https://via.placeholder.com/300x200?text=منتج+4" alt="منتج 4" />
+    <h3>منتج 4</h3>
+    <p>110 ريال</p>
+    <a href="#" class="btn">أضف للسلة</a>
+  </div>
+</section>
+
+<section id="contact" style="max-width:600px;margin:auto;padding:30px;">
+  <h2 style="text-align:center;">تواصل معنا</h2>
+  <p style="text-align:center;">راسلنا عبر البريد: <a href="mailto:info@orastore.com">info@orastore.com</a></p>
+</section>
+
+<footer>
+  &copy; 2025 متجر أورا. جميع الحقوق محفوظة.
+</footer>
+
+</body>
+</html>
